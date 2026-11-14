@@ -605,6 +605,12 @@
       letter-spacing: -.03em;
       margin: 6px 0 0;
     }
+    .header-filter-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
     .view-all-link {
       padding: 6px 13px;
       border-radius: 999px;
@@ -1012,15 +1018,20 @@
           <div class="eyebrow">Online thrift, your way</div>
           <h2 id="categories-title">Find your next favorite.</h2>
         </div>
-        <button type="button" class="view-all-link active" id="view-all-btn" data-filter-trigger="all">
-          Browse Live Inventory (<span id="count-all">108</span>)
-        </button>
+        <div class="header-filter-actions">
+          <button type="button" class="view-all-link active" id="view-all-btn" data-filter-trigger="all">
+            Browse Live Inventory (<span id="count-all">66</span>)
+          </button>
+          <button type="button" class="view-all-link" id="view-sold-btn" data-filter-trigger="sold">
+            Sold Items (<span id="count-sold">42</span>)
+          </button>
+        </div>
       </div>
       <div class="category-grid">
         <a class="category" href="#live-inventory" data-filter-trigger="preloved-clothing">
           <div class="category-top">
             <span class="number">01</span>
-            <span class="category-count-pill"><span id="count-preloved-clothing">63</span> in stock</span>
+            <span class="category-count-pill"><span id="count-preloved-clothing">35</span> in stock</span>
           </div>
           <h3>Preloved Clothing</h3>
           <p>Second hand clothing with more to give. Explore quality thrifted items for your everyday wardrobe.</p>
@@ -1029,7 +1040,7 @@
         <a class="category" href="#live-inventory" data-filter-trigger="designer-finds">
           <div class="category-top">
             <span class="number">02</span>
-            <span class="category-count-pill"><span id="count-designer-finds">12</span> in stock</span>
+            <span class="category-count-pill"><span id="count-designer-finds">8</span> in stock</span>
           </div>
           <h3>Designer Finds</h3>
           <p>Lightly used designer clothes and second hand style worth a closer look.</p>
@@ -1038,7 +1049,7 @@
         <a class="category" href="#live-inventory" data-filter-trigger="mens-like-new">
           <div class="category-top">
             <span class="number">03</span>
-            <span class="category-count-pill"><span id="count-mens-like-new">25</span> in stock</span>
+            <span class="category-count-pill"><span id="count-mens-like-new">16</span> in stock</span>
           </div>
           <h3>Men’s Like-New Clothing</h3>
           <p>Men’s thrifted clothes in like-new condition. A fresh look with a second chapter.</p>
@@ -1047,7 +1058,7 @@
         <a class="category" href="#live-inventory" data-filter-trigger="bags-accessories">
           <div class="category-top">
             <span class="number">04 · NOW LIVE ON DEPOP</span>
-            <span class="category-count-pill"><span id="count-bags-accessories">8</span> in stock</span>
+            <span class="category-count-pill"><span id="count-bags-accessories">7</span> in stock</span>
           </div>
           <h3>Bags &amp; Accessories</h3>
           <p class="accessories-tagline">The little details, same vibe</p>
@@ -1233,14 +1244,17 @@
     }
 
     function updateCategoryCounts() {
+      const liveItems = inventoryData.filter(item => !item.sold);
+      const soldItems = inventoryData.filter(item => item.sold);
       const counts = {
-        'all': inventoryData.length,
+        'all': liveItems.length,
+        'sold': soldItems.length,
         'preloved-clothing': 0,
         'designer-finds': 0,
         'mens-like-new': 0,
         'bags-accessories': 0
       };
-      inventoryData.forEach(item => {
+      liveItems.forEach(item => {
         if (counts[item.category] !== undefined) counts[item.category]++;
       });
       Object.keys(counts).forEach(cat => {
@@ -1250,7 +1264,8 @@
     }
 
     const categoryNames = {
-      'all': 'All Finds',
+      'all': 'Live Inventory',
+      'sold': 'Sold Items',
       'preloved-clothing': '01 Preloved Clothing',
       'designer-finds': '02 Designer Finds',
       'mens-like-new': '03 Men’s Like-New Clothing',
@@ -1259,8 +1274,18 @@
 
     function renderInventory() {
       const grid = document.getElementById('product-grid');
+      const liveCount = inventoryData.filter(item => !item.sold).length;
+      const soldCount = inventoryData.filter(item => item.sold).length;
+
       let filtered = inventoryData.filter(item => {
-        const matchesCat = currentCategory === 'all' || item.category === currentCategory;
+        let matchesCat = false;
+        if (currentCategory === 'sold') {
+          matchesCat = Boolean(item.sold);
+        } else if (currentCategory === 'all') {
+          matchesCat = !item.sold;
+        } else {
+          matchesCat = !item.sold && item.category === currentCategory;
+        }
         const q = searchQuery.toLowerCase().trim();
         const matchesSearch = !q ||
           item.title.toLowerCase().includes(q) ||
@@ -1277,7 +1302,12 @@
       const viewAllBtn = document.getElementById('view-all-btn');
       if (viewAllBtn) {
         viewAllBtn.classList.toggle('active', currentCategory === 'all');
-        viewAllBtn.innerHTML = `Browse Live Inventory (<span id="count-all">${inventoryData.length}</span>)`;
+        viewAllBtn.innerHTML = `Browse Live Inventory (<span id="count-all">${liveCount}</span>)`;
+      }
+      const viewSoldBtn = document.getElementById('view-sold-btn');
+      if (viewSoldBtn) {
+        viewSoldBtn.classList.toggle('active', currentCategory === 'sold');
+        viewSoldBtn.innerHTML = `Sold Items (<span id="count-sold">${soldCount}</span>)`;
       }
       const summaryEl = document.getElementById('active-filter-summary');
       if (summaryEl) {
