@@ -577,43 +577,6 @@
       vertical-align: middle;
     }
 
-    /* Prototype Interactive Demo Controls */
-    .demo-bar {
-      margin-top: 18px;
-      padding: 10px 14px;
-      border-radius: 8px;
-      border: 1px dashed rgba(255, 105, 8, 0.4);
-      background: rgba(255, 105, 8, 0.04);
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      font-size: 12px;
-      color: var(--muted);
-    }
-    .demo-bar strong { color: var(--cream); }
-    .demo-actions {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .demo-btn {
-      padding: 5px 10px;
-      border-radius: 5px;
-      border: 1px solid var(--orange);
-      background: #000;
-      color: var(--cream);
-      font-size: 11.5px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: background .15s, color .15s;
-    }
-    .demo-btn:hover {
-      background: var(--orange);
-      color: #000;
-    }
-
     /* Categories Section (Compact 4-up or Sleek 2x2) */
     .categories {
       margin: 26px auto 4px;
@@ -1123,17 +1086,6 @@
 
       <!-- Dynamic Product Grid -->
       <div class="product-grid" id="product-grid" aria-live="polite"></div>
-
-      <!-- Prototype Interactive Demo Controls -->
-      <div class="demo-bar">
-        <div>
-          <strong>Prototype Sync Simulator:</strong> Test what happens on strictlythriftee.com when an item sells or a new drop is posted on Depop:
-        </div>
-        <div class="demo-actions">
-          <button type="button" class="demo-btn" id="sim-new-drop-btn">+ Simulate New Depop Drop</button>
-          <button type="button" class="demo-btn" id="sim-sold-btn">Simulate Item Sold on Depop</button>
-        </div>
-      </div>
     </section>
 
     <!-- Socials Section (Preserved from temp site) -->
@@ -1470,48 +1422,6 @@
         label.textContent = 'Synced just now (' + new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) + ')';
         renderInventory();
       }, 750);
-    });
-
-    // Demo Simulator: Simulate New Depop Drop
-    let demoAdded = false;
-    document.getElementById('sim-new-drop-btn').addEventListener('click', () => {
-      if (!demoAdded) {
-        inventoryData.unshift({
-          id: '5174580515-rq',
-          slug: 'strictly_thrifte1-polished-rose-quartz-triangular-stone-f578',
-          title: 'Polished Rose Quartz Triangular Stone Pendant Necklace',
-          brand: 'Strictly Thriftee',
-          price: 12.00,
-          originalPrice: 16.00,
-          currency: 'USD',
-          size: 'One Size',
-          condition: 'Just Dropped',
-          category: 'bags-accessories',
-          categoryLabel: 'Bags & Accessories',
-          sold: false,
-          url: 'https://www.depop.com/products/strictly_thrifte1-polished-rose-quartz-triangular-stone-f578/',
-          image: 'https://media-photos.depop.com/b1/312246951/5179928090_3da915c5b47746b088ad71cfaed041e0/P0.jpg',
-          description: 'New drop synced from Depop! Natural polished rose quartz triangular pendant on braided cord.'
-        });
-        demoAdded = true;
-        document.getElementById('sim-new-drop-btn').textContent = '✓ New Drop Added to Feed';
-      }
-      currentCategory = 'all';
-      document.querySelectorAll('#category-pills .pill').forEach(b => b.classList.toggle('active', b.dataset.cat === 'all'));
-      updateCategoryCounts();
-      renderInventory();
-      document.getElementById('last-synced-label').textContent = 'Live webhook update · Just now';
-    });
-
-    // Demo Simulator: Simulate Item Sold on Depop
-    document.getElementById('sim-sold-btn').addEventListener('click', () => {
-      const unsold = inventoryData.find(x => !x.sold);
-      if (unsold) {
-        unsold.sold = true;
-        document.getElementById('sold-stat').textContent = (42 + inventoryData.filter(x => x.sold).length) + ' Sold';
-        renderInventory();
-        document.getElementById('last-synced-label').textContent = 'Sold status synced · Just now';
-      }
     });
 
     loadInventory();
