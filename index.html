@@ -418,7 +418,7 @@
       position: relative;
       width: 100%;
       aspect-ratio: 1 / 1;
-      background: #141414;
+      background: #0d1510;
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -427,13 +427,14 @@
     .product-img-wrap img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      object-position: center center;
+      object-fit: contain;
+      object-position: center top;
+      transform-origin: center top;
       display: block;
       transition: transform .3s ease;
     }
     .product-card:hover .product-img-wrap img {
-      transform: scale(1.04);
+      transform: scale(1.03);
     }
     .badge-row {
       position: absolute;
@@ -473,6 +474,12 @@
       letter-spacing: 0.08em;
       border: 1px solid var(--orange);
       box-shadow: 0 0 10px rgba(255, 105, 8, 0.25);
+    }
+    .photo-badge {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      pointer-events: none;
     }
     .sold-overlay {
       position: absolute;
@@ -763,11 +770,12 @@
       background: var(--card-bg);
       border: 1px solid var(--orange);
       border-radius: 12px;
-      max-width: 760px;
+      max-width: 820px;
       width: 100%;
       overflow: hidden;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+      align-items: stretch;
       text-align: left;
       position: relative;
       box-shadow: 0 24px 60px rgba(0, 0, 0, 0.9);
@@ -796,30 +804,43 @@
     .modal-gallery-wrap {
       display: flex;
       flex-direction: column;
-      background: #000;
+      justify-content: space-between;
+      align-items: center;
+      background: #050b07;
+      border-right: 1px solid var(--border);
       position: relative;
+      min-width: 0;
     }
     .modal-img {
       width: 100%;
-      height: 340px;
-      object-fit: cover;
-      background: #000;
+      aspect-ratio: 1 / 1;
+      height: auto;
+      max-height: 440px;
+      object-fit: contain;
+      object-position: center center;
+      background: #050b07;
       display: block;
+      margin: auto;
     }
     .modal-thumbs {
       display: flex;
-      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
       padding: 10px 12px;
       background: #050b07;
       border-top: 1px solid var(--border);
-      overflow-x: auto;
+      width: 100%;
     }
     .modal-thumb {
-      width: 52px;
-      height: 52px;
+      width: 44px;
+      height: 44px;
       border-radius: 6px;
-      border: 1px solid var(--border);
-      object-fit: cover;
+      border: 1.5px solid var(--border);
+      object-fit: contain;
+      object-position: center center;
+      background: #0d1510;
       cursor: pointer;
       opacity: 0.65;
       transition: all .15s;
@@ -828,6 +849,7 @@
     .modal-thumb:hover, .modal-thumb.active {
       opacity: 1;
       border-color: var(--orange);
+      transform: translateY(-1px);
     }
     .modal-content {
       padding: 28px 24px;
@@ -925,14 +947,13 @@
     .footer-contact-btn:hover .retro-arrow {
       color: #000;
     }
-      color: #000;
-    }
 
     @media (max-width: 820px) {
       .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .modal { grid-template-columns: 1fr; max-height: 90vh; overflow-y: auto; }
-      .modal-img { max-height: 300px; }
+      .modal { grid-template-columns: 1fr; max-width: 480px; max-height: 92vh; overflow-y: auto; }
+      .modal-gallery-wrap { border-right: none; border-bottom: 1px solid var(--border); }
+      .modal-img { aspect-ratio: 1 / 1; max-height: 380px; object-fit: contain; }
     }
     @media (max-width: 540px) {
       main { width: calc(100% - 28px); padding: 26px 0 36px; }
@@ -1292,9 +1313,6 @@
               ${item.sold ? `<div class="sold-overlay"><div class="sold-stamp">Sold</div></div>` : ''}
               <div class="badge-row">
                 <span class="badge">${item.size}</span>
-                ${item.images && item.images.length > 1
-                  ? `<span class="badge photo-badge" title="${item.images.length} photos available">📷 ${item.images.length}</span>`
-                  : ''}
                 ${item.sold
                   ? `<span class="badge sold-badge">Sold</span>`
                   : hasDeal
@@ -1302,6 +1320,9 @@
                     : `<span class="badge">${shortCondition}</span>`
                 }
               </div>
+              ${item.images && item.images.length > 1
+                ? `<span class="badge photo-badge" title="${item.images.length} photos available">📷 ${item.images.length}</span>`
+                : ''}
             </div>
             <div class="product-body">
               <div class="product-meta">
