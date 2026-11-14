@@ -969,6 +969,8 @@
       <span class="trust-divider">·</span>
       <span id="sold-stat">42 Sold</span>
       <span class="trust-divider">·</span>
+      <span id="active-stat">66 Active Listings</span>
+      <span class="trust-divider">·</span>
       <span>Ships in 24 hrs</span>
     </div>
 
@@ -980,14 +982,14 @@
           <h2 id="categories-title">Find your next favorite.</h2>
         </div>
         <button type="button" class="view-all-link active" id="view-all-btn" data-filter-trigger="all">
-          Browse Live Inventory (<span id="count-all">15</span>)
+          Browse Live Inventory (<span id="count-all">108</span>)
         </button>
       </div>
       <div class="category-grid">
         <a class="category" href="#live-inventory" data-filter-trigger="preloved-clothing">
           <div class="category-top">
             <span class="number">01</span>
-            <span class="category-count-pill"><span id="count-preloved-clothing">5</span> in stock</span>
+            <span class="category-count-pill"><span id="count-preloved-clothing">63</span> in stock</span>
           </div>
           <h3>Preloved Clothing</h3>
           <p>Second hand clothing with more to give. Explore quality thrifted items for your everyday wardrobe.</p>
@@ -996,7 +998,7 @@
         <a class="category" href="#live-inventory" data-filter-trigger="designer-finds">
           <div class="category-top">
             <span class="number">02</span>
-            <span class="category-count-pill"><span id="count-designer-finds">3</span> in stock</span>
+            <span class="category-count-pill"><span id="count-designer-finds">12</span> in stock</span>
           </div>
           <h3>Designer Finds</h3>
           <p>Lightly used designer clothes and second hand style worth a closer look.</p>
@@ -1005,7 +1007,7 @@
         <a class="category" href="#live-inventory" data-filter-trigger="mens-like-new">
           <div class="category-top">
             <span class="number">03</span>
-            <span class="category-count-pill"><span id="count-mens-like-new">4</span> in stock</span>
+            <span class="category-count-pill"><span id="count-mens-like-new">25</span> in stock</span>
           </div>
           <h3>Men’s Like-New Clothing</h3>
           <p>Men’s thrifted clothes in like-new condition. A fresh look with a second chapter.</p>
@@ -1014,7 +1016,7 @@
         <a class="category" href="#live-inventory" data-filter-trigger="bags-accessories">
           <div class="category-top">
             <span class="number">04 · NOW LIVE ON DEPOP</span>
-            <span class="category-count-pill"><span id="count-bags-accessories">3</span> in stock</span>
+            <span class="category-count-pill"><span id="count-bags-accessories">8</span> in stock</span>
           </div>
           <h3>Bags &amp; Accessories</h3>
           <p class="accessories-tagline">The little details, same vibe</p>
@@ -1251,6 +1253,9 @@
               ${item.sold ? `<div class="sold-overlay"><div class="sold-stamp">Sold</div></div>` : ''}
               <div class="badge-row">
                 <span class="badge">${item.size}</span>
+                ${item.images && item.images.length > 1
+                  ? `<span class="badge photo-badge" title="${item.images.length} photos available">📷 ${item.images.length}</span>`
+                  : ''}
                 ${item.sold
                   ? `<span class="badge sold-badge">Sold</span>`
                   : hasDeal
