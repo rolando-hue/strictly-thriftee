@@ -45,6 +45,13 @@
     "image": "https://strictlythriftee.com/assets/strictly-thriftee-logo.png",
     "description": "Curated online thrift store featuring preloved clothing, designer finds, and men's like-new secondhand fashion. Synced live with Depop.",
     "slogan": "Never retail, always a sale!",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "6",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
     "sameAs": [
       "https://www.depop.com/strictly_thriftee/",
       "https://www.tiktok.com/@strictly_thriftee",
@@ -1544,16 +1551,19 @@
         inventoryData = data.items || [];
         updateCategoryCounts();
         renderInventory();
-        injectProductSchema(inventoryData);
+        injectProductSchema(inventoryData, data.shop);
       } catch (err) {
         console.error('Failed to load inventory:', err);
       }
     }
 
-    function injectProductSchema(items) {
+    function injectProductSchema(items, shop = {}) {
       if (!items || items.length === 0) return;
       const existing = document.getElementById('schema-products');
       if (existing) existing.remove();
+
+      const ratingVal = (shop && shop.rating) ? String(shop.rating) : "5.0";
+      const reviewCnt = (shop && shop.reviewCount) ? String(shop.reviewCount) : "6";
 
       const script = document.createElement('script');
       script.id = 'schema-products';
@@ -1573,15 +1583,56 @@
             "description": item.description,
             "brand": {
               "@type": "Brand",
-              "name": item.brand
+              "name": item.brand || "Strictly Thriftee"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": ratingVal,
+              "reviewCount": reviewCnt,
+              "bestRating": "5",
+              "worstRating": "1"
             },
             "offers": {
               "@type": "Offer",
               "url": item.url,
               "priceCurrency": "USD",
               "price": item.price,
-              "itemCondition": item.condition.includes('New') ? "https://schema.org/NewCondition" : "https://schema.org/UsedCondition",
-              "availability": item.sold ? "https://schema.org/SoldOut" : "https://schema.org/InStock"
+              "itemCondition": (item.condition && item.condition.includes('New')) ? "https://schema.org/NewCondition" : "https://schema.org/UsedCondition",
+              "availability": item.sold ? "https://schema.org/SoldOut" : "https://schema.org/InStock",
+              "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": "0.00",
+                  "currency": "USD"
+                },
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "deliveryTime": {
+                  "@type": "ShippingDeliveryTime",
+                  "handlingTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 0,
+                    "maxValue": 1,
+                    "unitCode": "DAY"
+                  },
+                  "transitTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 5,
+                    "unitCode": "DAY"
+                  }
+                }
+              },
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "US",
+                "returnPolicyCountry": "US",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+                "merchantReturnLink": "https://strictlythriftee.com/"
+              }
             }
           }
         }))
