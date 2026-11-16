@@ -55,6 +55,7 @@
     "sameAs": [
       "https://www.depop.com/strictly_thriftee/",
       "https://www.tiktok.com/@strictly_thriftee",
+      "https://www.instagram.com/stritcly_thriftee",
       "https://open.spotify.com/playlist/50IZX2Wvj9CHTU05sE8Nbu?si=sSgcaCtZQZS8cyAecUlAYA"
     ],
     "offers": {
@@ -750,7 +751,7 @@
     }
     .social-links {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 12px;
     }
     .social-link {
@@ -1010,6 +1011,7 @@
     @media (max-width: 820px) {
       .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
       .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+      .social-links { grid-template-columns: 1fr; gap: 8px; }
       .modal { grid-template-columns: 1fr; max-width: 520px; max-height: 92vh; overflow-y: auto; }
       .modal-gallery-wrap { border-right: none; border-bottom: 1px solid var(--border); }
       .modal-img { aspect-ratio: 1 / 1; max-height: 360px; object-fit: contain; }
@@ -1471,19 +1473,26 @@
       <div class="eyebrow">More than the finds</div>
       <h2 id="socials-title">Follow the style. Feel the vibe.</h2>
       <div class="social-links">
+        <a class="social-link" href="https://www.instagram.com/stritcly_thriftee?utm_source=qr&amp;mdxt=ZWRwMGhrNDgxd3cw" target="_blank" rel="noopener noreferrer" data-umami-event="instagram-profile-click">
+          <span class="social-copy">
+            <strong>Follow on Instagram</strong>
+            <small>@stritcly_thriftee</small>
+          </span>
+          <img class="price-tag" src="./assets/instagram-tag.svg" width="42" height="50" alt="" aria-hidden="true">
+        </a>
+        <a class="social-link" href="https://www.tiktok.com/@strictly_thriftee" target="_blank" rel="noopener noreferrer" data-umami-event="tiktok-profile-click">
+          <span class="social-copy">
+            <strong>Follow on TikTok</strong>
+            <small>@strictly_thriftee</small>
+          </span>
+          <img class="price-tag" src="./assets/tiktok-price-tag.svg" width="42" height="50" alt="" aria-hidden="true">
+        </a>
         <a class="social-link" href="https://open.spotify.com/playlist/50IZX2Wvj9CHTU05sE8Nbu?si=sSgcaCtZQZS8cyAecUlAYA" target="_blank" rel="noopener noreferrer" data-umami-event="spotify-playlist-click">
           <span class="social-copy">
             <strong>Strictly Vibes</strong>
             <small>Listen on Spotify</small>
           </span>
           <img class="price-tag" src="./assets/spotify-music-tag.svg" width="42" height="50" alt="" aria-hidden="true">
-        </a>
-        <a class="social-link" href="https://www.tiktok.com/@strictly_thriftee" target="_blank" rel="noopener noreferrer" data-umami-event="tiktok-profile-click">
-          <span class="social-copy">
-            <strong>Follow us on TikTok</strong>
-            <small>@strictly_thriftee</small>
-          </span>
-          <img class="price-tag" src="./assets/tiktok-price-tag.svg" width="42" height="50" alt="" aria-hidden="true">
         </a>
       </div>
     </section>
