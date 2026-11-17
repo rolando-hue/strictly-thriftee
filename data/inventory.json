@@ -6,15 +6,15 @@
     "url": "https://www.depop.com/strictly_thriftee/",
     "avatar": "https://media-photos.depop.com/b1/312246951/5005265590_aede521c37bc45b69261165fb92494f2/U0.jpg",
     "rating": 5,
-    "reviewCount": 6,
-    "soldCount": 43,
-    "activeCount": 65,
+    "reviewCount": 7,
+    "soldCount": 45,
+    "activeCount": 63,
     "totalCount": 108,
     "followers": 43,
     "following": 80,
     "status": "Active this week · Ships in 24h",
     "bio": "Good style deserves a second life ♻️ Curated finds, everyday staples & standout pieces. Never retail, always a sale!",
-    "lastSyncedAt": "2026-11-17T00:13:30.693Z"
+    "lastSyncedAt": "2026-11-17T00:49:38.000Z"
   },
   "items": [
     {
@@ -29,7 +29,7 @@
       "condition": "Pre-owned",
       "category": "bags-accessories",
       "categoryLabel": "Bags & Accessories",
-      "sold": false,
+      "sold": true,
       "url": "https://www.depop.com/products/st0ictly_thriftee-adidas-black-honeycomb-duffel-gym-5cf3/",
       "image": "https://media-photos.depop.com/b1/312246951/5210192987_eccbeefe460f44c187395b038b2d90de/P0.jpg",
       "images": [
@@ -1253,7 +1253,7 @@
       "condition": "Pre-owned",
       "category": "preloved-clothing",
       "categoryLabel": "Preloved Clothing",
-      "sold": false,
+      "sold": true,
       "url": "https://www.depop.com/products/strictly_th9iftee-diesel-thommer-slim-washed-black-64be/",
       "image": "https://media-photos.depop.com/b1/312246951/5061931153_3a6b309d28f64e8bb28ef56a3341c325/P0.jpg",
       "images": [
