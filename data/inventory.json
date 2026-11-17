@@ -8,15 +8,71 @@
     "rating": 5,
     "reviewCount": 9,
     "soldCount": 45,
-    "activeCount": 63,
-    "totalCount": 108,
+    "activeCount": 65,
+    "totalCount": 110,
     "followers": 43,
     "following": 81,
     "status": "Active today · Ships in 24h",
     "bio": "Good style deserves a second life ♻️ Curated finds, everyday staples & standout pieces. Never retail, always a sale!",
-    "lastSyncedAt": "2026-11-17T17:59:01.597Z"
+    "lastSyncedAt": "2026-11-17T18:54:25.000Z"
   },
   "items": [
+    {
+      "id": "16ac",
+      "slug": "strictly_thriftye-jcrew-flex-athletic-slim-chino-16ac",
+      "title": "J.Crew Flex athletic slim chino trousers in slate blue \u2013 30x30",
+      "brand": "J.Crew",
+      "price": 8,
+      "originalPrice": null,
+      "currency": "USD",
+      "size": "30\"",
+      "condition": "Pre-owned",
+      "category": "preloved-clothing",
+      "categoryLabel": "Preloved Clothing",
+      "sold": false,
+      "url": "https://www.depop.com/products/strictly_thriftye-jcrew-flex-athletic-slim-chino-16ac/",
+      "image": "https://media-photos.depop.com/b1/312246951/5246347942_fe89570ea70f42efa8b378fc8181e7bf/P0.jpg",
+      "images": [
+        "https://media-photos.depop.com/b1/312246951/5246347942_fe89570ea70f42efa8b378fc8181e7bf/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5246347732_0c33b1f911bd4a8b9fb4856593557403/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5246348509_94660bc9098945979ac85e28a1f9ea9a/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5246346795_96bdbd9fe46a48d9953c397fb8c9d857/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5246347364_d8f31e2d3b2f4a518b34dcefe0fe25b6/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5246347943_dd332a7d787b4f87ae6100ccc0d80f82/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5246348029_c98de472bb9948ff8ee2e79c32db4135/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5246347872_6db28046b0e341e4abbc05e421c0b301/P0.jpg"
+      ],
+      "thumbnail": "https://media-photos.depop.com/b1/312246951/5246347942_fe89570ea70f42efa8b378fc8181e7bf/P0.jpg",
+      "description": "J.Crew Flex athletic slim chino trousers in slate blue \u2013 30x30. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+    },
+    {
+      "id": "d608",
+      "slug": "strictl4_thriftee-nike-blue-white-swoosh-pullover-d608",
+      "title": "Nike Blue White Swoosh Pullover Hoodie \u2013 Size Small",
+      "brand": "Nike",
+      "price": 13,
+      "originalPrice": null,
+      "currency": "USD",
+      "size": "S",
+      "condition": "Pre-owned",
+      "category": "preloved-clothing",
+      "categoryLabel": "Preloved Clothing",
+      "sold": false,
+      "url": "https://www.depop.com/products/strictl4_thriftee-nike-blue-white-swoosh-pullover-d608/",
+      "image": "https://media-photos.depop.com/b1/312246951/5245443552_04a5f784f4884675b49f3a5734f3edd5/P0.jpg",
+      "images": [
+        "https://media-photos.depop.com/b1/312246951/5245443552_04a5f784f4884675b49f3a5734f3edd5/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5245445199_2fdb939dcd10477cbce287c825bc5f0a/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5245443462_bb3fef27663c47ad9a358e9228f923a3/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5245445822_fafe02634ad44033888a817396dd7253/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5245444951_fd3f8aeeb4734a29925fab2c93ce12f8/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5245443494_95f227f2fa324fd587b8ee9692235788/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5245445847_bd6c74c8b4c546ab827c22866f606e07/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5245446079_82442d5b56f74f40b6c2b450cfe5ea8c/P0.jpg"
+      ],
+      "thumbnail": "https://media-photos.depop.com/b1/312246951/5245443552_04a5f784f4884675b49f3a5734f3edd5/P0.jpg",
+      "description": "Nike Blue White Swoosh Pullover Hoodie \u2013 Size Small. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+    },
     {
       "id": "5cf3",
       "slug": "st0ictly_thriftee-adidas-black-honeycomb-duffel-gym-5cf3",
@@ -48,7 +104,7 @@
     {
       "id": "bfe4",
       "slug": "striutly_thriftee-redhead-olive-tan-cotton-bfe4",
-      "title": "RedHead olive & tan cotton shooting shirt – men’s",
+      "title": "RedHead olive & tan cotton shooting shirt \u2013 men\u2019s",
       "brand": "Redhead Clothing",
       "price": 24,
       "originalPrice": null,
@@ -56,7 +112,7 @@
       "size": "L",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": false,
       "url": "https://www.depop.com/products/striutly_thriftee-redhead-olive-tan-cotton-bfe4/",
       "image": "https://media-photos.depop.com/b1/312246951/5208787297_6bde45eb26fb4344a22beca805c7c49b/P0.jpg",
@@ -71,7 +127,7 @@
         "https://media-photos.depop.com/b1/312246951/5208789916_568ed21bcb5d41ab99c57dd9fcecaecd/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5208787297_6bde45eb26fb4344a22beca805c7c49b/P0.jpg",
-      "description": "RedHead olive & tan cotton shooting shirt – men’s. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "RedHead olive & tan cotton shooting shirt \u2013 men\u2019s. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "ca69",
@@ -104,7 +160,7 @@
     {
       "id": "5370",
       "slug": "strictly_tpriftee-hart-schaffner-marx-navy-plaid-5370",
-      "title": "Hart Schaffner Marx navy plaid wool trousers – 38R,",
+      "title": "Hart Schaffner Marx navy plaid wool trousers \u2013 38R,",
       "brand": "Hart Schaffner Marx",
       "price": 25,
       "originalPrice": null,
@@ -127,7 +183,7 @@
         "https://media-photos.depop.com/b1/312246951/5208655418_86b46ef7175a44a5adc07285966bdac9/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5208651690_5d1c2901084741828af0580c766cb5b3/P0.jpg",
-      "description": "Hart Schaffner Marx navy plaid wool trousers – 38R,. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "Hart Schaffner Marx navy plaid wool trousers \u2013 38R,. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "7878",
@@ -160,7 +216,7 @@
     {
       "id": "2a4e",
       "slug": "strictly_4hriftee-nike-black-full-zip-hoodie-2a4e",
-      "title": "Nike Black Full Zip Hoodie Women’s Plus Size",
+      "title": "Nike Black Full Zip Hoodie Women\u2019s Plus Size",
       "brand": "Nike",
       "price": 12,
       "originalPrice": null,
@@ -168,7 +224,7 @@
       "size": "XL",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": false,
       "url": "https://www.depop.com/products/strictly_4hriftee-nike-black-full-zip-hoodie-2a4e/",
       "image": "https://media-photos.depop.com/b1/312246951/5201991749_4ef6f39507574507b95ba3e03570d701/P0.jpg",
@@ -183,7 +239,7 @@
         "https://media-photos.depop.com/b1/312246951/5202101950_b62afa6768844bb3a03964743b7c3ce3/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5201991749_4ef6f39507574507b95ba3e03570d701/P0.jpg",
-      "description": "Nike Black Full Zip Hoodie Women’s Plus Size. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "Nike Black Full Zip Hoodie Women\u2019s Plus Size. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "ab20",
@@ -364,7 +420,7 @@
       "size": "30\"",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": false,
       "url": "https://www.depop.com/products/strictly_t5riftee-marc-anthony-navy-cargo-pants-36df/",
       "image": "https://media-photos.depop.com/b1/312246951/5182735206_a369887ba1dc413296f83fe27d02c071/P0.jpg",
@@ -464,7 +520,7 @@
     {
       "id": "4823",
       "slug": "strictly_thri0tee-new-balance-515-beige-navy-4823",
-      "title": "New Balance 515 Beige Navy Sneakers Men’s US 10.5 D",
+      "title": "New Balance 515 Beige Navy Sneakers Men\u2019s US 10.5 D",
       "brand": "New Balance",
       "price": 32,
       "originalPrice": null,
@@ -487,7 +543,7 @@
         "https://media-photos.depop.com/b1/312246951/5137787108_cb60ce9680f74ec29164dd6fd813258a/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5137796074_9654b9519e7b49e98570c5b57769c4c4/P0.jpg",
-      "description": "New Balance 515 Beige Navy Sneakers Men’s US 10.5 D. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "New Balance 515 Beige Navy Sneakers Men\u2019s US 10.5 D. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "f1c8",
@@ -528,7 +584,7 @@
       "size": "XL",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": false,
       "url": "https://www.depop.com/products/strictly_tbriftee-fashion-nova-men-charcoal-heather-b7b0/",
       "image": "https://media-photos.depop.com/b1/312246951/5137563060_1bac646218ac463aa06c89648743389b/P0.jpg",
@@ -752,7 +808,7 @@
       "size": "L",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": false,
       "url": "https://www.depop.com/products/strictly_thrnftee-forever-21-men-heather-gray-3da6/",
       "image": "https://media-photos.depop.com/b1/312246951/5128710778_7b04149dfef4405e803def9bb5f52df0/P0.jpg",
@@ -800,7 +856,7 @@
     {
       "id": "b5fe",
       "slug": "styictly_thriftee-fashion-nova-novamen-light-blue-b5fe",
-      "title": "Fashion Nova NOVAMEN light blue stretch jeans — size",
+      "title": "Fashion Nova NOVAMEN light blue stretch jeans \u2014 size",
       "brand": "Fashion Nova",
       "price": 13,
       "originalPrice": null,
@@ -808,7 +864,7 @@
       "size": "36\"",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": false,
       "url": "https://www.depop.com/products/styictly_thriftee-fashion-nova-novamen-light-blue-b5fe/",
       "image": "https://media-photos.depop.com/b1/312246951/5119388875_e8f5873a64fc47428bdf88b73a43b2c4/P0.jpg",
@@ -823,7 +879,7 @@
         "https://media-photos.depop.com/b1/312246951/5119433398_68718c5b333a4500b6a9cf8a9d274bef/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5119388875_e8f5873a64fc47428bdf88b73a43b2c4/P0.jpg",
-      "description": "Fashion Nova NOVAMEN light blue stretch jeans — size. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "Fashion Nova NOVAMEN light blue stretch jeans \u2014 size. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "2b58",
@@ -884,7 +940,7 @@
     {
       "id": "436a",
       "slug": "sxrictly_thriftee-snowmilk-lime-green-smiley-graphic-436a",
-      "title": "SnowMilk Lime Green Smiley Graphic Tee — Large\n\nLime",
+      "title": "SnowMilk Lime Green Smiley Graphic Tee \u2014 Large\n\nLime",
       "brand": "Other",
       "price": 30,
       "originalPrice": null,
@@ -907,7 +963,7 @@
         "https://media-photos.depop.com/b1/312246951/5111647076_2bf2b20fc46949c1a800705c18d53fde/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5111646117_0f475b6ee1324941bedf447c4b0c6f7d/P0.jpg",
-      "description": "SnowMilk Lime Green Smiley Graphic Tee — Large\n\nLime. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "SnowMilk Lime Green Smiley Graphic Tee \u2014 Large\n\nLime. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "b95f",
@@ -1114,7 +1170,7 @@
       "size": "32\"",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": false,
       "url": "https://www.depop.com/products/strictly_thriztee-fashion-nova-novamen-light-wash-3820/",
       "image": "https://media-photos.depop.com/b1/312246951/5071949771_0b97d7ff113b4eda938ebdcdd5f969ba/P0.jpg",
@@ -1196,7 +1252,7 @@
       "size": "One Size",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": false,
       "url": "https://www.depop.com/products/surictly_thriftee-fashion-nova-novamen-slim-fit-ca98/",
       "image": "https://media-photos.depop.com/b1/312246951/5070032326_d6608f388aac48c4b89654e6223523aa/P0.jpg",
@@ -1224,7 +1280,7 @@
       "size": "One Size",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": false,
       "url": "https://www.depop.com/products/stri9tly_thriftee-fashion-nova-novamen-light-blue-24ea/",
       "image": "https://media-photos.depop.com/b1/312246951/5064524039_f09f9b16d243443b8285a25b80294bb3/P0.jpg",
@@ -1244,7 +1300,7 @@
     {
       "id": "64be",
       "slug": "strictly_th9iftee-diesel-thommer-slim-washed-black-64be",
-      "title": "Diesel Thommer Slim Washed Black Stretch Jeans — W33",
+      "title": "Diesel Thommer Slim Washed Black Stretch Jeans \u2014 W33",
       "brand": "Diesel",
       "price": 40.5,
       "originalPrice": null,
@@ -1267,7 +1323,7 @@
         "https://media-photos.depop.com/b1/312246951/5061932461_b63dbd68c355475688f3b409d07db86c/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5061931153_3a6b309d28f64e8bb28ef56a3341c325/P0.jpg",
-      "description": "Diesel Thommer Slim Washed Black Stretch Jeans — W33. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "Diesel Thommer Slim Washed Black Stretch Jeans \u2014 W33. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "a1bc",
@@ -1327,7 +1383,7 @@
     {
       "id": "4599",
       "slug": "strictly_phriftee-hm-khaki-slim-fit-stretch-chinos-4599",
-      "title": "H&M Khaki Slim-Fit Stretch Chinos — W33\n\nKhaki H&M",
+      "title": "H&M Khaki Slim-Fit Stretch Chinos \u2014 W33\n\nKhaki H&M",
       "brand": "H&M",
       "price": 19,
       "originalPrice": null,
@@ -1335,7 +1391,7 @@
       "size": "One Size",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": false,
       "url": "https://www.depop.com/products/strictly_phriftee-hm-khaki-slim-fit-stretch-chinos-4599/",
       "image": "https://media-photos.depop.com/b1/312246951/5061506956_147db0569b634063ad69b2fb18921d21/P0.jpg",
@@ -1350,7 +1406,7 @@
         "https://media-photos.depop.com/b1/312246951/5061542406_b6b2ab895c994ca8809d157b01ce17c2/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5061506956_147db0569b634063ad69b2fb18921d21/P0.jpg",
-      "description": "H&M Khaki Slim-Fit Stretch Chinos — W33\n\nKhaki H&M. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "H&M Khaki Slim-Fit Stretch Chinos \u2014 W33\n\nKhaki H&M. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "ca12",
@@ -1363,7 +1419,7 @@
       "size": "34\"",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": false,
       "url": "https://www.depop.com/products/strvctly_thriftee-fashion-nova-novamen-light-wash-ca12/",
       "image": "https://media-photos.depop.com/b1/312246951/5055839138_a22fa711596e4cc0be7e6ed4fa7c96d5/P0.jpg",
@@ -1612,7 +1668,7 @@
       "size": "L",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": false,
       "url": "https://www.depop.com/products/steictly_thriftee-olive-green-hm-regular-fit-5e3e/",
       "image": "https://media-photos.depop.com/b1/312246951/5021774601_50a9a3e008ee4821a7e942e0b9f6b622/P0.jpg",
@@ -1640,7 +1696,7 @@
       "size": "L",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": false,
       "url": "https://www.depop.com/products/strictlu_thriftee-del-mex-baja-pullover-hoodie-d0c0/",
       "image": "https://media-photos.depop.com/b1/312246951/5019045517_3b8de0414bae4db1b607fdcd25118659/P0.jpg",
@@ -1752,7 +1808,7 @@
       "size": "One Size",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": false,
       "url": "https://www.depop.com/products/strdctly_thriftee-novamen-black-white-stripe-cotton-ea2e/",
       "image": "https://media-photos.depop.com/b1/312246951/5010836934_6edfaf20d33b4e68bfaed09f5a52614a/P0.jpg",
@@ -1772,7 +1828,7 @@
     {
       "id": "d6d3",
       "slug": "romans_thdngs-hm-burgundy-loose-fit-pullover-d6d3",
-      "title": "H&M Burgundy Loose Fit Pullover Hoodie – Size",
+      "title": "H&M Burgundy Loose Fit Pullover Hoodie \u2013 Size",
       "brand": "H&M",
       "price": 17,
       "originalPrice": null,
@@ -1780,7 +1836,7 @@
       "size": "M",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": false,
       "url": "https://www.depop.com/products/romans_thdngs-hm-burgundy-loose-fit-pullover-d6d3/",
       "image": "https://media-photos.depop.com/b1/312246951/4997377418_4a8a348d7b4348538806986f800d2753/P0.jpg",
@@ -1795,12 +1851,12 @@
         "https://media-photos.depop.com/b1/312246951/5001243151_0a5e68730dcc423db8b5db61e48b0d2e/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/4997377418_4a8a348d7b4348538806986f800d2753/P0.jpg",
-      "description": "H&M Burgundy Loose Fit Pullover Hoodie – Size. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "H&M Burgundy Loose Fit Pullover Hoodie \u2013 Size. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "8c89",
       "slug": "rdmans_things-urban-heritage-black-hooded-henley-8c89",
-      "title": "Urban Heritage Black Hooded Henley — L\n\nA low-key",
+      "title": "Urban Heritage Black Hooded Henley \u2014 L\n\nA low-key",
       "brand": "Urban Heritage",
       "price": 13,
       "originalPrice": null,
@@ -1823,7 +1879,7 @@
         "https://media-photos.depop.com/b1/312246951/5001223412_8a58c825606c4127bbf88ce6c3f71f5d/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/4994957223_d1d631ca88b945729ba46dca6d14f74e/P0.jpg",
-      "description": "Urban Heritage Black Hooded Henley — L\n\nA low-key. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "Urban Heritage Black Hooded Henley \u2014 L\n\nA low-key. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "144b",
@@ -1836,7 +1892,7 @@
       "size": "XL",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": false,
       "url": "https://www.depop.com/products/remans_things-gravity-california-republic-lightweight-gray-144b/",
       "image": "https://media-photos.depop.com/b1/312246951/4994644687_8661569ac2274deda18f8e28fc50b790/P0.jpg",
@@ -1864,7 +1920,7 @@
       "size": "32\"",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": true,
       "url": "https://www.depop.com/products/strictly_thriptee-fashion-nova-novamen-light-blue-34dd/",
       "image": "https://media-photos.depop.com/b1/312246951/5064343699_0b6b5c404bde46dab951093c2a653472/P0.jpg",
@@ -1911,7 +1967,7 @@
     {
       "id": "115d",
       "slug": "stpictly_thriftee-new-balance-327-navy-scarlet-115d",
-      "title": "New Balance 327 Navy Scarlet Sneakers Men’s US 10.5",
+      "title": "New Balance 327 Navy Scarlet Sneakers Men\u2019s US 10.5",
       "brand": "New Balance",
       "price": 38,
       "originalPrice": null,
@@ -1934,12 +1990,12 @@
         "https://media-photos.depop.com/b1/312246951/5137806615_57f2681badea4e648a20060c7d233610/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5137805513_bd80cc8224cc4fad9be893e5fb6c5090/P0.jpg",
-      "description": "New Balance 327 Navy Scarlet Sneakers Men’s US 10.5. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "New Balance 327 Navy Scarlet Sneakers Men\u2019s US 10.5. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "c319",
       "slug": "strictlw_thriftee-lacoste-sport-navy-tricolor-crocodile-c319",
-      "title": "Lacoste Sport Navy Tricolor Crocodile Cap – L\n\nNavy",
+      "title": "Lacoste Sport Navy Tricolor Crocodile Cap \u2013 L\n\nNavy",
       "brand": "Lacoste Sport",
       "price": 22.5,
       "originalPrice": null,
@@ -1962,7 +2018,7 @@
         "https://media-photos.depop.com/b1/312246951/5071739982_fd1537d68c1d49f391d31dd0164248c3/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5071738615_548e303dd0ae4d3889c458217dfa1229/P0.jpg",
-      "description": "Lacoste Sport Navy Tricolor Crocodile Cap – L\n\nNavy. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "Lacoste Sport Navy Tricolor Crocodile Cap \u2013 L\n\nNavy. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "74fe",
@@ -2084,7 +2140,7 @@
       "size": "M",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": true,
       "url": "https://www.depop.com/products/strictly_thrif5ee-divided-by-hm-dark-navy-0182/",
       "image": "https://media-photos.depop.com/b1/312246951/5054868742_cc3b16e5ad7b44d79a55a0e4ecfc0a55/P0.jpg",
@@ -2187,7 +2243,7 @@
     {
       "id": "5c8d",
       "slug": "strictly_ahriftee-invicta-pro-diver-28002-blue-5c8d",
-      "title": "Invicta Pro Diver 28002 Blue & Gold Watch – Needs",
+      "title": "Invicta Pro Diver 28002 Blue & Gold Watch \u2013 Needs",
       "brand": "Invicta",
       "price": 30,
       "originalPrice": null,
@@ -2206,12 +2262,12 @@
         "https://media-photos.depop.com/b1/312246951/5001259677_c7aaa776b0f64a6189e2070494e446d1/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5000798134_10d8fcad259f44c7b4f5169d92bc5c81/P0.jpg",
-      "description": "Invicta Pro Diver 28002 Blue & Gold Watch – Needs. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "Invicta Pro Diver 28002 Blue & Gold Watch \u2013 Needs. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "5feb",
       "slug": "strictly_thrivtee-hm-black-textured-knit-crewneck-5feb",
-      "title": "H&M Black Textured Knit Crewneck Sweater – L\n\nBlack",
+      "title": "H&M Black Textured Knit Crewneck Sweater \u2013 L\n\nBlack",
       "brand": "H&M",
       "price": 15,
       "originalPrice": null,
@@ -2234,7 +2290,7 @@
         "https://media-photos.depop.com/b1/312246951/5126557798_5f4f1015725f4903bd34bb46078465a5/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5126538073_85a9d7f8e085423e8454968ed1b62caf/P0.jpg",
-      "description": "H&M Black Textured Knit Crewneck Sweater – L\n\nBlack. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "H&M Black Textured Knit Crewneck Sweater \u2013 L\n\nBlack. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "6e27",
@@ -2303,7 +2359,7 @@
       "size": "L",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": true,
       "url": "https://www.depop.com/products/sxrictly_thriftee-old-navy-charcoal-sherpa-lined-zip-daca/",
       "image": "https://media-photos.depop.com/b1/312246951/5128955036_85da4ea8ad894610a176fc8dadc0fd24/P0.jpg",
@@ -2331,7 +2387,7 @@
       "size": "L",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": true,
       "url": "https://www.depop.com/products/strictly_thri4tee-old-navy-charcoal-sherpa-lined-zip-1b66/",
       "image": "https://media-photos.depop.com/b1/312246951/5118264543_8e462d33a5cc448393f000499bee25d5/P0.jpg",
@@ -2407,7 +2463,7 @@
     {
       "id": "94f3",
       "slug": "str4ctly_thriftee-adidas-gray-three-stripe-track-pants-94f3",
-      "title": "Adidas Gray Three-Stripe Track Pants — M\n\nAdidas",
+      "title": "Adidas Gray Three-Stripe Track Pants \u2014 M\n\nAdidas",
       "brand": "Adidas",
       "price": 9,
       "originalPrice": null,
@@ -2429,7 +2485,7 @@
         "https://media-photos.depop.com/b1/312246951/5061291337_0bcfdbba749447678a7f6a61daf0df8d/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5061289656_ba34669305da4aa4acaab921d773d113/P0.jpg",
-      "description": "Adidas Gray Three-Stripe Track Pants — M\n\nAdidas. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "Adidas Gray Three-Stripe Track Pants \u2014 M\n\nAdidas. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "155b",
@@ -2549,7 +2605,7 @@
       "size": "XL",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": true,
       "url": "https://www.depop.com/products/strictly_thrifxee-novamen-navy-white-trim-cotton-c99c/",
       "image": "https://media-photos.depop.com/b1/312246951/5013111205_85bf33dc034541e19578536c67aac955/P0.jpg",
@@ -2601,7 +2657,7 @@
       "size": "M",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": true,
       "url": "https://www.depop.com/products/rom7ns_things-the-north-face-light-gray-0383/",
       "image": "https://media-photos.depop.com/b1/312246951/4996884754_7ba7e77a22c340feb99acf4cd695d8e3/P0.jpg",
@@ -2628,7 +2684,7 @@
       "size": "XL",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": true,
       "url": "https://www.depop.com/products/strictly_ihriftee-olive-green-hm-slim-fit-989d/",
       "image": "https://media-photos.depop.com/b1/312246951/5021826023_9c087adae5554ee9b9b9e260db37f060/P0.jpg",
@@ -2712,7 +2768,7 @@
       "size": "XL",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": true,
       "url": "https://www.depop.com/products/striatly_thriftee-the-north-face-salmon-pink-5775/",
       "image": "https://media-photos.depop.com/b1/312246951/5012376201_69e7a4ce4b97440d92db3f7ea126c027/P0.jpg",
@@ -2732,7 +2788,7 @@
     {
       "id": "1a84",
       "slug": "strictlyhthriftee-armani-exchange-ax2308-silver-watch-1a84",
-      "title": "Armani Exchange AX2308 Silver Watch – Black Eagle",
+      "title": "Armani Exchange AX2308 Silver Watch \u2013 Black Eagle",
       "brand": "Armani Exchange",
       "price": 28,
       "originalPrice": null,
@@ -2751,7 +2807,7 @@
         "https://media-photos.depop.com/b1/312246951/5001293545_47a47637f0fc4aea8fc0d3b0c837fca9/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5001273527_3efc6141c3964e219f535f6fdcc396ba/P0.jpg",
-      "description": "Armani Exchange AX2308 Silver Watch – Black Eagle. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "Armani Exchange AX2308 Silver Watch \u2013 Black Eagle. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "9c20",
@@ -2764,7 +2820,7 @@
       "size": "XL",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": true,
       "url": "https://www.depop.com/products/strict5y_thriftee-quince-gray-full-zip-hoodie-made-9c20/",
       "image": "https://media-photos.depop.com/b1/312246951/5018992178_4a48b5e5fe754aa5afb7bd26c0d7d851/P0.jpg",
@@ -2784,7 +2840,7 @@
     {
       "id": "753e",
       "slug": "strictly_5hriftee-port-company-olive-green-753e",
-      "title": "Port & Company Olive Green “I’m in My 40s” Slogan",
+      "title": "Port & Company Olive Green \u201cI\u2019m in My 40s\u201d Slogan",
       "brand": "Port & Company",
       "price": 5,
       "originalPrice": null,
@@ -2807,12 +2863,12 @@
         "https://media-photos.depop.com/b1/312246951/5012439688_8f2b122021f54e5091bc561f5d131f66/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5012427090_af0f60cc29d64b84a22f63fe055a4bbf/P0.jpg",
-      "description": "Port & Company Olive Green “I’m in My 40s” Slogan. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "Port & Company Olive Green \u201cI\u2019m in My 40s\u201d Slogan. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "dc2e",
       "slug": "strictly_twriftee-on-cloud-white-black-dc2e",
-      "title": "On Cloud White & Black Sneakers | Men’s US 9.5 |",
+      "title": "On Cloud White & Black Sneakers | Men\u2019s US 9.5 |",
       "brand": "On Running",
       "price": 20,
       "originalPrice": null,
@@ -2835,7 +2891,7 @@
         "https://media-photos.depop.com/b1/312246951/5028622605_d65ba386921b4555a69022501b7e0cc4/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5028596387_b6bde0f088664d34aafff2b5eebb4b15/P0.jpg",
-      "description": "On Cloud White & Black Sneakers | Men’s US 9.5 |. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "On Cloud White & Black Sneakers | Men\u2019s US 9.5 |. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "d11e",
@@ -2868,7 +2924,7 @@
     {
       "id": "bb38",
       "slug": "strictly_thriftje-invicta-pro-diver-28002-blue-bb38",
-      "title": "Invicta Pro Diver 28002 Blue & Gold Watch – Needs",
+      "title": "Invicta Pro Diver 28002 Blue & Gold Watch \u2013 Needs",
       "brand": "Invicta",
       "price": 21,
       "originalPrice": null,
@@ -2887,7 +2943,7 @@
         "https://media-photos.depop.com/b1/312246951/5001247373_29f943359b2748c0a49aa3858dd6aa97/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5000856774_0978cfd7c101459dae6d6f2061a7c2f8/P0.jpg",
-      "description": "Invicta Pro Diver 28002 Blue & Gold Watch – Needs. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "Invicta Pro Diver 28002 Blue & Gold Watch \u2013 Needs. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "adde",
@@ -2916,8 +2972,8 @@
     {
       "id": "9c05",
       "slug": "strictly_thriftei-comme-des-garcons-play-navy-9c05",
-      "title": "Comme des Garçons PLAY Navy Double Heart T-Shirt",
-      "brand": "Comme des Garçons Play",
+      "title": "Comme des Gar\u00e7ons PLAY Navy Double Heart T-Shirt",
+      "brand": "Comme des Gar\u00e7ons Play",
       "price": 21,
       "originalPrice": null,
       "currency": "USD",
@@ -2939,12 +2995,12 @@
         "https://media-photos.depop.com/b1/312246951/5011481539_b0b961e8ad5f4932a5cdd51c19ff28da/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5011479859_a8bf007635c44cbbb9c81f62064313cf/P0.jpg",
-      "description": "Comme des Garçons PLAY Navy Double Heart T-Shirt. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "Comme des Gar\u00e7ons PLAY Navy Double Heart T-Shirt. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "0a42",
       "slug": "romans_thingd-hm-black-loose-fit-pullover-0a42",
-      "title": "H&M Black Loose Fit Pullover Hoodie – Size M\n\nPlain",
+      "title": "H&M Black Loose Fit Pullover Hoodie \u2013 Size M\n\nPlain",
       "brand": "H&M",
       "price": 16,
       "originalPrice": null,
@@ -2952,7 +3008,7 @@
       "size": "M",
       "condition": "Like-New",
       "category": "mens-like-new",
-      "categoryLabel": "Men’s Like-New",
+      "categoryLabel": "Men\u2019s Like-New",
       "sold": true,
       "url": "https://www.depop.com/products/romans_thingd-hm-black-loose-fit-pullover-0a42/",
       "image": "https://media-photos.depop.com/b1/312246951/4997525493_224d4a462ee54ea1bb98d60038b99aed/P0.jpg",
@@ -2967,12 +3023,12 @@
         "https://media-photos.depop.com/b1/312246951/5001245218_1e041a93adbe421498e9979032938d01/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/4997525493_224d4a462ee54ea1bb98d60038b99aed/P0.jpg",
-      "description": "H&M Black Loose Fit Pullover Hoodie – Size M\n\nPlain. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "H&M Black Loose Fit Pullover Hoodie \u2013 Size M\n\nPlain. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "f73a",
       "slug": "strictlp_thriftee-armani-exchange-ax2308-silver-watch-f73a",
-      "title": "Armani Exchange AX2308 Silver Watch – Black Eagle",
+      "title": "Armani Exchange AX2308 Silver Watch \u2013 Black Eagle",
       "brand": "Armani Exchange",
       "price": 34,
       "originalPrice": null,
@@ -2991,7 +3047,7 @@
         "https://media-photos.depop.com/b1/312246951/5001255194_f2c47c9ca7cb418c8c60170fbb958806/P0.jpg"
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5000953706_7a6f9e977b7143d9b0d6f270e0ac4b9d/P0.jpg",
-      "description": "Armani Exchange AX2308 Silver Watch – Black Eagle. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+      "description": "Armani Exchange AX2308 Silver Watch \u2013 Black Eagle. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     }
   ]
 }
