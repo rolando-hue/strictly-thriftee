@@ -1601,82 +1601,86 @@
         "@type": "ItemList",
         "name": "Strictly Thriftee Curated Drops",
         "numberOfItems": items.length,
-        "itemListElement": items.slice(0, 50).map((item, idx) => ({
-          "@type": "ListItem",
-          "position": idx + 1,
-          "item": {
-            "@type": "Product",
-            "name": item.title,
-            "image": item.images && item.images.length > 0 ? item.images : [item.image],
-            "description": item.description,
-            "brand": {
-              "@type": "Brand",
-              "name": item.brand || "Strictly Thriftee"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": ratingVal,
-              "reviewCount": reviewCnt,
-              "bestRating": "5",
-              "worstRating": "1"
-            },
-            "review": {
-              "@type": "Review",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
+        "itemListElement": items.slice(0, 50).map((item, idx) => {
+          const rawTitle = (item.title || item.name || "Curated Vintage Garment").trim();
+          const safeName = rawTitle.length > 100 ? rawTitle.slice(0, 97).trim() + "..." : rawTitle;
+          return {
+            "@type": "ListItem",
+            "position": idx + 1,
+            "item": {
+              "@type": "Product",
+              "name": safeName,
+              "image": item.images && item.images.length > 0 ? item.images : [item.image],
+              "description": item.description,
+              "brand": {
+                "@type": "Brand",
+                "name": item.brand || "Strictly Thriftee"
               },
-              "author": {
-                "@type": "Person",
-                "name": "Verified Depop Buyer"
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": ratingVal,
+                "reviewCount": reviewCnt,
+                "bestRating": "5",
+                "worstRating": "1"
               },
-              "reviewBody": "Fast next business day shipping, pristine vintage condition, and authentic curated style."
-            },
-            "offers": {
-              "@type": "Offer",
-              "url": item.url,
-              "priceCurrency": "USD",
-              "price": item.price,
-              "itemCondition": (item.condition && item.condition.includes('New')) ? "https://schema.org/NewCondition" : "https://schema.org/UsedCondition",
-              "availability": item.sold ? "https://schema.org/SoldOut" : "https://schema.org/InStock",
-              "shippingDetails": {
-                "@type": "OfferShippingDetails",
-                "shippingRate": {
-                  "@type": "MonetaryAmount",
-                  "value": "0.00",
-                  "currency": "USD"
+              "review": {
+                "@type": "Review",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
                 },
-                "shippingDestination": {
-                  "@type": "DefinedRegion",
-                  "addressCountry": "US"
+                "author": {
+                  "@type": "Person",
+                  "name": "Verified Depop Buyer"
                 },
-                "deliveryTime": {
-                  "@type": "ShippingDeliveryTime",
-                  "handlingTime": {
-                    "@type": "QuantitativeValue",
-                    "minValue": 0,
-                    "maxValue": 1,
-                    "unitCode": "DAY"
+                "reviewBody": "Fast next business day shipping, pristine vintage condition, and authentic curated style."
+              },
+              "offers": {
+                "@type": "Offer",
+                "url": item.url,
+                "priceCurrency": "USD",
+                "price": item.price,
+                "itemCondition": (item.condition && item.condition.includes('New')) ? "https://schema.org/NewCondition" : "https://schema.org/UsedCondition",
+                "availability": item.sold ? "https://schema.org/SoldOut" : "https://schema.org/InStock",
+                "shippingDetails": {
+                  "@type": "OfferShippingDetails",
+                  "shippingRate": {
+                    "@type": "MonetaryAmount",
+                    "value": "0.00",
+                    "currency": "USD"
                   },
-                  "transitTime": {
-                    "@type": "QuantitativeValue",
-                    "minValue": 2,
-                    "maxValue": 5,
-                    "unitCode": "DAY"
+                  "shippingDestination": {
+                    "@type": "DefinedRegion",
+                    "addressCountry": "US"
+                  },
+                  "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 0,
+                      "maxValue": 1,
+                      "unitCode": "DAY"
+                    },
+                    "transitTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 2,
+                      "maxValue": 5,
+                      "unitCode": "DAY"
+                    }
                   }
+                },
+                "hasMerchantReturnPolicy": {
+                  "@type": "MerchantReturnPolicy",
+                  "applicableCountry": "US",
+                  "returnPolicyCountry": "US",
+                  "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+                  "merchantReturnLink": "https://strictlythriftee.com/"
                 }
-              },
-              "hasMerchantReturnPolicy": {
-                "@type": "MerchantReturnPolicy",
-                "applicableCountry": "US",
-                "returnPolicyCountry": "US",
-                "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
-                "merchantReturnLink": "https://strictlythriftee.com/"
               }
             }
-          }
-        }))
+          };
+        })
       });
       document.head.appendChild(script);
     }
