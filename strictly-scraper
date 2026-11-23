@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Strictly Thriftee CLI Scraper executable launcher
+exec python3 "$(dirname "$0")/scripts/scraper.py" "$@"
