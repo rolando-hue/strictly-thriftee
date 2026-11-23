@@ -114,7 +114,7 @@ def extract_listings_from_html(html: str) -> list:
                 is_sold = True
 
         # Extract price snippet
-        price = 15.0
+        price = None
         orig_price = None
         if idx != -1:
             snippet = html[max(0, idx - 200):min(len(html), idx + 800)]
@@ -171,15 +171,17 @@ def main():
         existing = items_by_slug.get(slug)
         if existing:
             existing["sold"] = item["sold"]
-            existing["price"] = item["price"]
-            if item["originalPrice"]:
+            if item.get("price") is not None:
+                existing["price"] = item["price"]
+            if item.get("originalPrice") is not None:
                 existing["originalPrice"] = item["originalPrice"]
             if item["img"] and not existing.get("image"):
                 existing["image"] = item["img"]
             updated_items.append(existing)
         else:
             title = clean_title_from_slug(slug)
-            cat, cat_label = categorize(title, price=item["price"])
+            item_price = item["price"] if item["price"] is not None else 15.0
+            cat, cat_label = categorize(title, price=item_price)
             item_id = slug.split("-")[-1] if "-" in slug else slug[:6]
             full_url = f"https://www.depop.com{item['href']}"
             img = item["img"] or "https://strictlythriftee.com/assets/strictly-thriftee-logo.png"
@@ -188,7 +190,7 @@ def main():
                 "slug": slug,
                 "title": title,
                 "brand": "Other",
-                "price": item["price"],
+                "price": item_price,
                 "originalPrice": item["originalPrice"],
                 "currency": "USD",
                 "size": "Regular",
