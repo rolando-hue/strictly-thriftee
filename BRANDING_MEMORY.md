@@ -64,3 +64,15 @@ Stored in `assets/seasonal/`:
 ## Quality & Export Standards
 * **Transparent PNGs:** Verified via exterior flood-fill isolation; zero haloing, internal cream/white elements and highlights 100% preserved.
 * **Black Backgrounds:** Composed directly onto pure `#000000` black for dark mode, Gmail themes, and social tiles.
+
+---
+
+## Seasonal Calendar & Scheduled Reverts
+
+### 🗓️ December 29th Revert Directive
+* **Action:** Revert all active holiday/Christmas branding back to the **original primary Strictly_Thriftee logo**.
+* **Site Target:** `/Users/Tracey/.gemini/antigravity/scratch/strictly-thriftee/index.html` (Hero logo element).
+* **Target Image:** `./assets/strictly-thriftee-logo.png` (1536 × 1024 px).
+* **Automated Script:** [revert-to-original-branding.sh](file:///Users/Tracey/.gemini/antigravity/scratch/strictly-thriftee/scripts/revert-to-original-branding.sh)
+* **Rule:** On December 29th, remove holiday hats, wreaths, snow accents, and red lettering across the site, watermarks, and active digital displays, returning strictly to the timeless cream/orange/forest-green primary master lockup.
+
