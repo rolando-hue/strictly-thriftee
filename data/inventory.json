@@ -14,7 +14,7 @@
     "following": 80,
     "status": "Active today \u00b7 Ships in 24h",
     "bio": "Good style deserves a second life \u267b\ufe0f Curated finds, everyday staples & standout pieces. Never retail, always a sale!",
-    "lastSyncedAt": "2026-11-23T06:37:58.820623+00:00"
+    "lastSyncedAt": "2026-11-23T12:53:49.936539+00:00"
   },
   "items": [
     {
@@ -240,34 +240,6 @@
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5295086184_6bec547b8735479dabb28bdf2b7ddd61/P0.jpg",
       "description": "Fashion Nova Novamen Rust Brown. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
-    },
-    {
-      "id": "8650",
-      "slug": "strictly_thriftke-hm-olive-green-swim-trunks-8650",
-      "title": "H&M Olive Green Swim Trunks",
-      "brand": "H&M",
-      "price": 6.0,
-      "originalPrice": null,
-      "currency": "USD",
-      "size": "Regular",
-      "condition": "Pre-owned",
-      "category": "preloved-clothing",
-      "categoryLabel": "Preloved Clothing",
-      "sold": false,
-      "url": "https://www.depop.com/products/strictly_thriftke-hm-olive-green-swim-trunks-8650/",
-      "image": "https://media-photos.depop.com/b1/312246951/5295069265_f2ebeda3e4614a2c849c78a7d3461b83/P0.jpg",
-      "images": [
-        "https://media-photos.depop.com/b1/312246951/5295069265_f2ebeda3e4614a2c849c78a7d3461b83/P0.jpg",
-        "https://media-photos.depop.com/b1/312246951/5295070308_99f5569bd3ae4420994c0c2c8418f89d/P0.jpg",
-        "https://media-photos.depop.com/b1/312246951/5295069934_52c4ef108d6e4dda86a251ebbee73da3/P0.jpg",
-        "https://media-photos.depop.com/b1/312246951/5295068666_87c996a606fe4496bbd8ca9782b5014c/P0.jpg",
-        "https://media-photos.depop.com/b1/312246951/5295067881_fa81fde9bad340f984f1d497e5fb22a1/P0.jpg",
-        "https://media-photos.depop.com/b1/312246951/5295069162_76096393eb8f4f3bb5b16a80cf8655d5/P0.jpg",
-        "https://media-photos.depop.com/b1/312246951/5295067693_510e2a3195bc4324af981b60c3c97cce/P0.jpg",
-        "https://media-photos.depop.com/b1/312246951/5295068571_86fe506a0dd8433786e8c677bb7dbcfd/P0.jpg"
-      ],
-      "thumbnail": "https://media-photos.depop.com/b1/312246951/5295069265_f2ebeda3e4614a2c849c78a7d3461b83/P0.jpg",
-      "description": "H&M Olive Green Swim Trunks. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "82e0",
@@ -712,6 +684,34 @@
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5272994261_6cd7a5b875f94f66bd3615cc1556fa73/P0.jpg",
       "description": "Jared Lang Navy Blue 100. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+    },
+    {
+      "id": "8650",
+      "slug": "strictly_thriftke-hm-olive-green-swim-trunks-8650",
+      "title": "H&M Olive Green Swim Trunks",
+      "brand": "H&M",
+      "price": 6.0,
+      "originalPrice": null,
+      "currency": "USD",
+      "size": "Regular",
+      "condition": "Pre-owned",
+      "category": "preloved-clothing",
+      "categoryLabel": "Preloved Clothing",
+      "sold": false,
+      "url": "https://www.depop.com/products/strictly_thriftke-hm-olive-green-swim-trunks-8650/",
+      "image": "https://media-photos.depop.com/b1/312246951/5295069265_f2ebeda3e4614a2c849c78a7d3461b83/P0.jpg",
+      "images": [
+        "https://media-photos.depop.com/b1/312246951/5295069265_f2ebeda3e4614a2c849c78a7d3461b83/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5295070308_99f5569bd3ae4420994c0c2c8418f89d/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5295069934_52c4ef108d6e4dda86a251ebbee73da3/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5295068666_87c996a606fe4496bbd8ca9782b5014c/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5295067881_fa81fde9bad340f984f1d497e5fb22a1/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5295069162_76096393eb8f4f3bb5b16a80cf8655d5/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5295067693_510e2a3195bc4324af981b60c3c97cce/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5295068571_86fe506a0dd8433786e8c677bb7dbcfd/P0.jpg"
+      ],
+      "thumbnail": "https://media-photos.depop.com/b1/312246951/5295069265_f2ebeda3e4614a2c849c78a7d3461b83/P0.jpg",
+      "description": "H&M Olive Green Swim Trunks. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "7878",
