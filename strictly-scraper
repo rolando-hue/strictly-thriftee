@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
 # Strictly Thriftee CLI Scraper executable launcher
-exec python3 "$(dirname "$0")/scripts/scraper.py" "$@"
+SCRIPT_DIR="$(cd "$(dirname "$(readlink -f "$0" 2>/dev/null || readlink "$0" 2>/dev/null || echo "$0")")" && pwd)"
+TARGET="$SCRIPT_DIR/scripts/scraper.py"
+
+if [ ! -f "$TARGET" ]; then
+  TARGET="/Users/Tracey/.gemini/antigravity/scratch/strictly-thriftee/scripts/scraper.py"
+fi
+
+exec python3 "$TARGET" "$@"
