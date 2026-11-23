@@ -8,15 +8,57 @@
     "rating": 5,
     "reviewCount": 12,
     "soldCount": 54,
-    "activeCount": 112,
-    "totalCount": 166,
+    "activeCount": 114,
+    "totalCount": 168,
     "followers": 44,
     "following": 80,
     "status": "Active today \u00b7 Ships in 24h",
     "bio": "Good style deserves a second life \u267b\ufe0f Curated finds, everyday staples & standout pieces. Never retail, always a sale!",
-    "lastSyncedAt": "2026-11-23T12:53:49.936539+00:00"
+    "lastSyncedAt": "2026-11-23T18:44:25.039581+00:00"
   },
   "items": [
+    {
+      "id": "025a",
+      "slug": "strictly_thrifpee-vintage-michael-kors-astor-black-025a",
+      "title": "Vintage Michael Kors Astor Black",
+      "brand": "Other",
+      "price": 15.0,
+      "originalPrice": null,
+      "currency": "USD",
+      "size": "Regular",
+      "condition": "Pre-owned",
+      "category": "preloved-clothing",
+      "categoryLabel": "Preloved Clothing",
+      "sold": false,
+      "url": "https://www.depop.com/products/strictly_thrifpee-vintage-michael-kors-astor-black-025a/",
+      "image": "https://media-photos.depop.com/b1/312246951/5300728145_8a0a550492594c36ab77dbcd1dee2209/P10.jpg",
+      "images": [
+        "https://media-photos.depop.com/b1/312246951/5300728145_8a0a550492594c36ab77dbcd1dee2209/P10.jpg"
+      ],
+      "thumbnail": "https://media-photos.depop.com/b1/312246951/5300728145_8a0a550492594c36ab77dbcd1dee2209/P10.jpg",
+      "description": "Vintage Michael Kors Astor Black. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+    },
+    {
+      "id": "be27",
+      "slug": "strictly_thrtftee-vintage-levis-action-slacks-heather-be27",
+      "title": "Vintage Levis Action Slacks Heather",
+      "brand": "Other",
+      "price": 15.0,
+      "originalPrice": null,
+      "currency": "USD",
+      "size": "Regular",
+      "condition": "Pre-owned",
+      "category": "preloved-clothing",
+      "categoryLabel": "Preloved Clothing",
+      "sold": false,
+      "url": "https://www.depop.com/products/strictly_thrtftee-vintage-levis-action-slacks-heather-be27/",
+      "image": "https://media-photos.depop.com/b1/312246951/5300604159_df3a8f8e4ff5457db15c8b746a1c230b/P10.jpg",
+      "images": [
+        "https://media-photos.depop.com/b1/312246951/5300604159_df3a8f8e4ff5457db15c8b746a1c230b/P10.jpg"
+      ],
+      "thumbnail": "https://media-photos.depop.com/b1/312246951/5300604159_df3a8f8e4ff5457db15c8b746a1c230b/P10.jpg",
+      "description": "Vintage Levis Action Slacks Heather. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+    },
     {
       "id": "4ca4",
       "slug": "strictly_thfiftee-umbro-vintage-style-yellow-soccer-4ca4",
