@@ -1398,7 +1398,7 @@
         <a class="category" href="#live-inventory" data-filter-trigger="preloved-clothing">
           <div class="category-top">
             <span class="number">01</span>
-            <span class="category-count-pill"><span id="count-preloved-clothing">61</span> in stock</span>
+            <span class="category-count-pill"><span id="count-preloved-clothing">59</span> in stock</span>
           </div>
           <h3>Preloved Clothing</h3>
           <p>Second hand clothing with more to give. Explore quality thrifted items for your everyday wardrobe.</p>
@@ -1407,7 +1407,7 @@
         <a class="category" href="#live-inventory" data-filter-trigger="designer-finds">
           <div class="category-top">
             <span class="number">02</span>
-            <span class="category-count-pill"><span id="count-designer-finds">9</span> in stock</span>
+            <span class="category-count-pill"><span id="count-designer-finds">8</span> in stock</span>
           </div>
           <h3>Designer Finds</h3>
           <p>Lightly used designer clothes and second hand style worth a closer look.</p>
@@ -1425,7 +1425,7 @@
         <a class="category" href="#live-inventory" data-filter-trigger="bags-accessories">
           <div class="category-top">
             <span class="number">04 · NOW LIVE ON DEPOP</span>
-            <span class="category-count-pill"><span id="count-bags-accessories">31</span> in stock</span>
+            <span class="category-count-pill"><span id="count-bags-accessories">34</span> in stock</span>
           </div>
           <h3>Bags &amp; Accessories</h3>
           <p class="accessories-tagline">The little details, same vibe</p>
@@ -1576,7 +1576,15 @@
       try {
         const res = await fetch('./data/inventory.json?t=' + Date.now());
         const data = await res.json();
-        inventoryData = data.items || [];
+        const upgradeImg = (url) => url ? url.replace(/\/P\d+\.jpg/g, '/P0.jpg') : url;
+        inventoryData = (data.items || []).map(item => {
+          if (item.image) item.image = upgradeImg(item.image);
+          if (item.thumbnail) item.thumbnail = upgradeImg(item.thumbnail);
+          if (item.images && item.images.length) {
+            item.images = item.images.map(upgradeImg);
+          }
+          return item;
+        });
         updateCategoryCounts();
         renderInventory();
         injectProductSchema(inventoryData, data.shop);

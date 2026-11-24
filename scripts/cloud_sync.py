@@ -72,18 +72,34 @@ def clean_title_from_slug(slug: str) -> str:
         "Full Zip": "Full-Zip",
         "Xl": "XL",
         "And": "&",
+        "Levis": "Levi's",
     }
     for k, v in replacements.items():
         title = re.sub(rf"\b{k}\b", v, title, flags=re.IGNORECASE)
     return title
 
 
+def extract_brand_from_title(title: str) -> str:
+    known_brands = [
+        "Coach", "Michael Kors", "Kenneth Cole", "Levi's", "Brooks Brothers",
+        "Banana Republic", "Umbro", "H&M", "Polo Ralph Lauren", "Ralph Lauren",
+        "Novamen", "Fashion Nova", "Cotton On", "Primark", "Hollister",
+        "Fanatics", "RSQ", "Supreme", "AllSaints", "Uniqlo", "Nike", "Adidas",
+        "Zara", "Tommy Hilfiger", "Calvin Klein", "Champion", "Under Armour",
+        "Southpole", "G-Star RAW", "Cole Haan", "Alexander Del Rossa"
+    ]
+    for b in known_brands:
+        if re.search(rf"\b{re.escape(b)}\b", title, re.IGNORECASE):
+            return b
+    return "Other"
+
+
 def categorize(title: str, price: float = 0.0) -> tuple:
     text = title.lower()
-    if any(k in text for k in ['bag', 'duffel', 'necklace', 'pendant', 'amethyst', 'quartz', 'jewelry', 'jade', 'watch']):
+    if any(k in text for k in ['bag', 'backpack', 'hobo', 'tote', 'duffel', 'necklace', 'pendant', 'amethyst', 'quartz', 'jewelry', 'jade', 'watch', 'wallet']):
         return "bags-accessories", "Bags & Accessories"
     designer_brands = ['nanushka', 'hart schaffner marx', 'polo ralph lauren', 'ralph lauren', 'gucci', 'prada', 'coach', 'supreme', 'brooks brothers', 'comme des garcons', 'diesel', 'allsaints']
-    if price >= 45.0 or any(b in text for b in designer_brands):
+    if (price and price >= 45.0) or any(b in text for b in designer_brands):
         return "designer-finds", "Designer Finds"
     if 'like new' in text or 'brand new' in text:
         return "mens-like-new", "Men’s Like-New"
@@ -127,13 +143,13 @@ def extract_listings_from_html(html: str) -> list:
                 except ValueError:
                     pass
 
-        # Extract main image
+        # Extract main image (always upgrade to full-resolution P0.jpg)
         img_url = ""
         if idx != -1:
             snippet = html[max(0, idx - 400):min(len(html), idx + 600)]
             img_match = re.search(r'src=["\'](https://media-photos\.depop\.com/[^"\']+)["\']', snippet)
             if img_match:
-                img_url = img_match.group(1)
+                img_url = re.sub(r'/P\d+\.jpg', '/P0.jpg', img_match.group(1))
 
         listings.append({
             "href": href,
@@ -177,20 +193,28 @@ def main():
                 existing["originalPrice"] = item["originalPrice"]
             if item["img"] and not existing.get("image"):
                 existing["image"] = item["img"]
+            # Ensure existing images are upgraded to P0
+            if existing.get("image"):
+                existing["image"] = re.sub(r'/P\d+\.jpg', '/P0.jpg', existing["image"])
+            if existing.get("thumbnail"):
+                existing["thumbnail"] = re.sub(r'/P\d+\.jpg', '/P0.jpg', existing["thumbnail"])
+            if existing.get("images"):
+                existing["images"] = [re.sub(r'/P\d+\.jpg', '/P0.jpg', x) for x in existing["images"]]
             updated_items.append(existing)
         else:
             title = clean_title_from_slug(slug)
-            item_price = item["price"] if item["price"] is not None else 15.0
-            cat, cat_label = categorize(title, price=item_price)
+            brand = extract_brand_from_title(title)
+            cat, cat_label = categorize(title, price=item["price"] or 0.0)
             item_id = slug.split("-")[-1] if "-" in slug else slug[:6]
             full_url = f"https://www.depop.com{item['href']}"
-            img = item["img"] or "https://strictlythriftee.com/assets/strictly-thriftee-logo.png"
+            raw_img = item["img"] or "https://strictlythriftee.com/assets/strictly-thriftee-logo.png"
+            img = re.sub(r'/P\d+\.jpg', '/P0.jpg', raw_img)
             new_item = {
                 "id": item_id,
                 "slug": slug,
                 "title": title,
-                "brand": "Other",
-                "price": item_price,
+                "brand": brand,
+                "price": item["price"],
                 "originalPrice": item["originalPrice"],
                 "currency": "USD",
                 "size": "Regular",
