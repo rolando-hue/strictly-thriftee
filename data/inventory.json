@@ -8,15 +8,57 @@
     "rating": 5,
     "reviewCount": 12,
     "soldCount": 54,
-    "activeCount": 114,
-    "totalCount": 168,
+    "activeCount": 116,
+    "totalCount": 170,
     "followers": 44,
     "following": 80,
     "status": "Active today \u00b7 Ships in 24h",
     "bio": "Good style deserves a second life \u267b\ufe0f Curated finds, everyday staples & standout pieces. Never retail, always a sale!",
-    "lastSyncedAt": "2026-11-23T18:44:25.039581+00:00"
+    "lastSyncedAt": "2026-11-24T00:39:41.042086+00:00"
   },
   "items": [
+    {
+      "id": "a9f7",
+      "slug": "strictle_thriftee-kenneth-cole-reaction-back-the-a9f7",
+      "title": "Kenneth Cole Reaction Back The",
+      "brand": "Other",
+      "price": 15.0,
+      "originalPrice": null,
+      "currency": "USD",
+      "size": "Regular",
+      "condition": "Pre-owned",
+      "category": "preloved-clothing",
+      "categoryLabel": "Preloved Clothing",
+      "sold": false,
+      "url": "https://www.depop.com/products/strictle_thriftee-kenneth-cole-reaction-back-the-a9f7/",
+      "image": "https://media-photos.depop.com/b1/312246951/5301549624_aed8aebf4727445c886dbef94dd740dc/P10.jpg",
+      "images": [
+        "https://media-photos.depop.com/b1/312246951/5301549624_aed8aebf4727445c886dbef94dd740dc/P10.jpg"
+      ],
+      "thumbnail": "https://media-photos.depop.com/b1/312246951/5301549624_aed8aebf4727445c886dbef94dd740dc/P10.jpg",
+      "description": "Kenneth Cole Reaction Back The. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+    },
+    {
+      "id": "3aab",
+      "slug": "strictly_thniftee-coach-hudson-colorblock-pebbled-leather-3aab",
+      "title": "Coach Hudson Colorblock Pebbled Leather",
+      "brand": "Other",
+      "price": 15.0,
+      "originalPrice": null,
+      "currency": "USD",
+      "size": "Regular",
+      "condition": "Pre-owned",
+      "category": "designer-finds",
+      "categoryLabel": "Designer Finds",
+      "sold": false,
+      "url": "https://www.depop.com/products/strictly_thniftee-coach-hudson-colorblock-pebbled-leather-3aab/",
+      "image": "https://media-photos.depop.com/b1/312246951/5301375337_dc2ebf3b0642452881b1f96060468a08/P10.jpg",
+      "images": [
+        "https://media-photos.depop.com/b1/312246951/5301375337_dc2ebf3b0642452881b1f96060468a08/P10.jpg"
+      ],
+      "thumbnail": "https://media-photos.depop.com/b1/312246951/5301375337_dc2ebf3b0642452881b1f96060468a08/P10.jpg",
+      "description": "Coach Hudson Colorblock Pebbled Leather. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+    },
     {
       "id": "025a",
       "slug": "strictly_thrifpee-vintage-michael-kors-astor-black-025a",
