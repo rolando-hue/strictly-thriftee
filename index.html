@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#000000">
-  <meta name="description" content="Shop online thrift with Strictly Thriftee: preloved clothing, designer thrift finds, and men’s like-new second hand clothes. Live inventory synced from Depop.">
-  <title>Strictly Thriftee | Preloved &amp; Designer Thrift Clothing</title>
+  <meta name="keywords" content="online thrift store, vintage clothing online, curated thrift shop, vintage streetwear, preloved clothes, designer thrift, men's vintage clothes, second hand designer clothes, 90s vintage clothing, Y2K thrift, sustainable fashion, Depop seller shop, thrifted bags and accessories, affordable second hand clothing, vintage Coach, vintage Michael Kors, vintage Brooks Brothers, vintage Levi's, vintage Polo Ralph Lauren, vintage Supreme, Coach thrift, Michael Kors thrift, Brooks Brothers thrift, Levi's thrift, Polo Ralph Lauren thrift, Supreme thrift">
+  <meta name="description" content="Shop curated vintage streetwear, second-hand designer fashion, and men's like-new preloved clothing. Sourced daily and synced live with Depop. Never retail, always a sale!">
+  <title>Strictly Thriftee | Curated Online Thrift Store, Vintage Clothes &amp; Designer Finds</title>
   <link rel="canonical" href="https://strictlythriftee.com/">
   <!-- Standard Favicons & Safari Tab Icons -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico?v=3">
@@ -84,6 +85,48 @@
       "highPrice": "95",
       "offerCount": "108"
     }
+  }
+  </script>
+
+  <!-- Schema.org FAQPage Structured Data for Google Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I purchase items from Strictly Thriftee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every item links directly to our verified Depop shop with 1-click checkout, full Depop Buyer Protection, and tracked delivery on every single piece."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How fast does Strictly Thriftee ship?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We pride ourselves on lightning-fast dispatch: all orders ship within 24 hours (next business day) with tracking provided immediately."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are your vintage and designer clothes authentic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every piece (including vintage Levi's, Brooks Brothers, Coach, and Michael Kors) is personally sourced, inspected, and verified for authenticity and quality before listing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often are new thrift drops added?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We drop new thrift finds daily! Our website syncs in real-time with our live inventory so you can always catch the latest drops before they sell out."
+        }
+      }
+    ]
   }
   </script>
 
@@ -1335,6 +1378,135 @@
         line-height: 1.6;
       }
     }
+
+    /* Accessibility / Screen Reader Only */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Curated Brands & Sourcing SEO Section */
+    .seo-brands-section {
+      margin: 40px auto 32px;
+      text-align: center;
+      padding: 0 10px;
+    }
+    .section-subtext {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 620px;
+      margin: 0 auto 20px;
+      line-height: 1.5;
+    }
+    .brand-pills-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .brand-pill {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      color: var(--cream);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: inherit;
+    }
+    .brand-pill:hover, .brand-pill.active {
+      background: var(--orange);
+      color: #000;
+      border-color: var(--orange);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255, 105, 8, 0.25);
+    }
+    .brand-pill .brand-count {
+      background: rgba(255, 255, 255, 0.12);
+      padding: 2px 7px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+    .brand-pill:hover .brand-count, .brand-pill.active .brand-count {
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      margin: 48px auto;
+      text-align: left;
+      max-width: 780px;
+      padding: 0 12px;
+    }
+    .faq-section .eyebrow, .faq-section h2 {
+      text-align: center;
+    }
+    .faq-accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .faq-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+    .faq-item[open] {
+      border-color: var(--orange);
+    }
+    .faq-item summary {
+      padding: 16px 20px;
+      font-weight: 600;
+      font-size: 1.02rem;
+      color: var(--cream);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+    .faq-item summary::after {
+      content: '+';
+      font-size: 1.3rem;
+      color: var(--orange);
+      transition: transform 0.2s ease;
+      font-weight: 400;
+    }
+    .faq-item[open] summary::after {
+      content: '−';
+    }
+    .faq-answer {
+      padding: 0 20px 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .faq-answer p {
+      margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -1362,6 +1534,7 @@
     <!-- Hero Header matching strictlythriftee.com -->
     <h1>
       <img class="logo" src="./assets/strictly-thriftee-christmas-logo.png" width="1376" height="768" alt="Strictly Thriftee — Never retail, always a sale!">
+      <span class="sr-only">Strictly Thriftee — Curated Online Thrift Store, Vintage Clothes &amp; Designer Finds</span>
     </h1>
     <p class="intro">Preloved clothes. &nbsp;Designer finds. &nbsp;<span>Your next favorite.</span></p>
 
@@ -1435,6 +1608,16 @@
       </div>
     </section>
 
+    <!-- Curated Brands & Sourcing SEO Section -->
+    <section class="seo-brands-section" aria-labelledby="brands-title">
+      <div class="eyebrow">Curated Labels</div>
+      <h2 id="brands-title">Shop by Trending Brands &amp; Vintage Labels</h2>
+      <p class="section-subtext">Click any brand to filter current live drops. Hand-inspected preloved style, designer bargains, and everyday streetwear.</p>
+      <div class="brand-pills-wrap" id="seo-brand-cloud">
+        <!-- Dynamically rendered and SEO crawlable brand pills -->
+      </div>
+    </section>
+
     <!-- LIVE DEPOP INVENTORY SECTION -->
     <section class="storefront" id="live-inventory" aria-labelledby="inventory-title">
       <div class="storefront-header">
@@ -1485,6 +1668,38 @@
 
       <!-- Dynamic Product Grid -->
       <div class="product-grid" id="product-grid" aria-live="polite"></div>
+    </section>
+
+    <!-- FAQ Section for Search Intent & Rich Snippets -->
+    <section class="faq-section" aria-labelledby="faq-title">
+      <div class="eyebrow">Got Questions?</div>
+      <h2 id="faq-title">Frequently Asked Questions</h2>
+      <div class="faq-accordion">
+        <details class="faq-item">
+          <summary>How do I buy items from Strictly Thriftee?</summary>
+          <div class="faq-answer">
+            <p>Every item links directly to our verified Depop shop with 1-click checkout. You get secure checkout, full Depop Buyer Protection, and tracked delivery on every single piece.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>How fast does Strictly Thriftee ship?</summary>
+          <div class="faq-answer">
+            <p>We pride ourselves on lightning-fast dispatch: all orders ship within 24 hours (next business day) with tracking provided immediately upon dispatch.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Are your vintage and designer clothes authentic?</summary>
+          <div class="faq-answer">
+            <p>Yes. Every piece (from vintage Levi's and Brooks Brothers to Coach, Michael Kors, and streetwear staples) is personally sourced, inspected, and verified for authenticity and condition before listing.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>How often are new thrift drops added?</summary>
+          <div class="faq-answer">
+            <p>We drop new thrift finds daily! Our website syncs in real-time with our live Depop inventory so you can always catch the latest drops before they sell out.</p>
+          </div>
+        </details>
+      </div>
     </section>
 
     <!-- Socials Section (Preserved from temp site) -->
@@ -1587,10 +1802,62 @@
         });
         updateCategoryCounts();
         renderInventory();
+        renderBrandPills();
         injectProductSchema(inventoryData, data.shop);
       } catch (err) {
         console.error('Failed to load inventory:', err);
       }
+    }
+
+    function renderBrandPills() {
+      const container = document.getElementById('seo-brand-cloud');
+      if (!container) return;
+
+      const brandCounts = {};
+      inventoryData.filter(i => !i.sold).forEach(item => {
+        const b = (item.brand || '').trim();
+        if (b && b.toLowerCase() !== 'other') {
+          brandCounts[b] = (brandCounts[b] || 0) + 1;
+        }
+      });
+
+      const priorityBrands = {
+        'Coach': 100, 'Michael Kors': 90, 'Brooks Brothers': 85, "Levi's": 80,
+        'Polo Ralph Lauren': 75, 'Supreme': 70, 'AllSaints': 65, 'Banana Republic': 60,
+        'Umbro': 55, 'J.Crew': 50, 'UNIQLO': 45, 'Kenneth Cole': 40, 'G-Star RAW': 35,
+        'Southpole': 30, 'Perry Ellis': 25, 'Vineyard Vines': 20
+      };
+
+      const sortedBrands = Object.keys(brandCounts)
+        .sort((a, b) => (priorityBrands[b] || 0) - (priorityBrands[a] || 0) || brandCounts[b] - brandCounts[a] || a.localeCompare(b));
+
+      container.innerHTML = sortedBrands.map(b => {
+        const isActive = searchQuery.toLowerCase().trim() === b.toLowerCase();
+        return `
+          <button type="button" class="brand-pill ${isActive ? 'active' : ''}" data-brand="${b}">
+            <span>${b}</span>
+            <span class="brand-count">${brandCounts[b]}</span>
+          </button>
+        `;
+      }).join('');
+
+      container.querySelectorAll('.brand-pill').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const brand = btn.dataset.brand;
+          const searchInput = document.getElementById('search-input');
+          if (searchQuery.toLowerCase().trim() === brand.toLowerCase()) {
+            searchQuery = '';
+            if (searchInput) searchInput.value = '';
+          } else {
+            searchQuery = brand;
+            if (searchInput) searchInput.value = brand;
+          }
+          currentCategory = 'all';
+          renderInventory();
+          renderBrandPills();
+          document.getElementById('live-inventory')?.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
     }
 
     function injectProductSchema(items, shop = {}) {
@@ -1906,6 +2173,7 @@
     document.getElementById('search-input').addEventListener('input', (e) => {
       searchQuery = e.target.value;
       renderInventory();
+      renderBrandPills();
     });
     document.getElementById('sort-select').addEventListener('change', (e) => {
       currentSort = e.target.value;

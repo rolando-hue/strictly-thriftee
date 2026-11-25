@@ -270,7 +270,88 @@ def main():
     with open(INDEX_FILE, "w", encoding="utf-8") as f:
         f.write(idx_html)
 
+    update_seo_metadata(data)
+
     print(f"[Cloud Sync] Completed successfully. Total: {total_count} (Active: {active_count}, Sold: {sold_count})")
+
+
+def update_seo_metadata(data: dict):
+    """
+    Dynamically generates and updates SEO keywords, meta tags, and sitemap.xml
+    based on the current active inventory.
+    """
+    from collections import Counter
+
+    items = data.get("items", [])
+    active_items = [i for i in items if not i.get("sold")]
+
+    brand_counts = Counter(
+        i.get("brand") for i in active_items
+        if i.get("brand") and i.get("brand").lower() != "other"
+    )
+
+    # Priority list for prestigious / sought-after thrift brands
+    priority_brands = {
+        'Coach': 100, 'Michael Kors': 90, 'Brooks Brothers': 85, "Levi's": 80,
+        'Polo Ralph Lauren': 75, 'Supreme': 70, 'AllSaints': 65, 'Banana Republic': 60,
+        'Umbro': 55, 'J.Crew': 50, 'UNIQLO': 45, 'Kenneth Cole': 40, 'G-Star RAW': 35,
+        'Southpole': 30, 'Perry Ellis': 25, 'Vineyard Vines': 20
+    }
+
+    sorted_brands = sorted(
+        brand_counts.keys(),
+        key=lambda b: (priority_brands.get(b, 0), brand_counts[b]),
+        reverse=True
+    )
+    top_brands = sorted_brands[:14]
+
+    core_keywords = [
+        "online thrift store",
+        "vintage clothing online",
+        "curated thrift shop",
+        "vintage streetwear",
+        "preloved clothes",
+        "designer thrift",
+        "men's vintage clothes",
+        "second hand designer clothes",
+        "90s vintage clothing",
+        "Y2K thrift",
+        "sustainable fashion",
+        "Depop seller shop",
+        "thrifted bags and accessories",
+        "affordable second hand clothing"
+    ]
+    brand_keywords = [f"vintage {b}" for b in top_brands[:6]] + [f"{b} thrift" for b in top_brands[:6]]
+    all_keywords = ", ".join(core_keywords + brand_keywords)
+
+    with open(INDEX_FILE, "r", encoding="utf-8") as f:
+        idx_html = f.read()
+
+    if '<meta name="keywords"' in idx_html:
+        idx_html = re.sub(
+            r'<meta name="keywords" content="[^"]*">',
+            f'<meta name="keywords" content="{all_keywords}">',
+            idx_html
+        )
+    else:
+        idx_html = idx_html.replace(
+            '<meta name="description"',
+            f'<meta name="keywords" content="{all_keywords}">\n  <meta name="description"'
+        )
+
+    with open(INDEX_FILE, "w", encoding="utf-8") as f:
+        f.write(idx_html)
+
+    today_str = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d")
+    sitemap_file = os.path.join(WORKSPACE_DIR, "sitemap.xml")
+    if os.path.exists(sitemap_file):
+        with open(sitemap_file, "r", encoding="utf-8") as sf:
+            s_content = sf.read()
+        s_content = re.sub(r'<lastmod>[^<]+</lastmod>', f'<lastmod>{today_str}</lastmod>', s_content)
+        with open(sitemap_file, "w", encoding="utf-8") as sf:
+            sf.write(s_content)
+
+    print(f"[Cloud Sync] SEO metadata & sitemap updated with {len(top_brands)} top brands.")
 
 
 if __name__ == "__main__":

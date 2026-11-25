@@ -52,8 +52,8 @@ jobs:
         run: |
           git config user.name "Strictly Thriftee Bot"
           git config user.email "bot@strictlythriftee.com"
-          git add data/inventory.json index.html
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(sync): automated Depop cloud sync [skip ci]" && git push)
+          git add data/inventory.json index.html sitemap.xml
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(sync): automated Depop cloud sync and SEO update [skip ci]" && git push)
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
