@@ -14,7 +14,7 @@
     "following": 80,
     "status": "Active today \u00b7 Ships in 24h",
     "bio": "Good style deserves a second life \u267b\ufe0f Curated finds, everyday staples & standout pieces. Never retail, always a sale!",
-    "lastSyncedAt": "2026-11-25T06:53:30.652409+00:00"
+    "lastSyncedAt": "2026-11-26T00:42:23.256876+00:00"
   },
   "items": [
     {
@@ -70,34 +70,6 @@
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5301375337_dc2ebf3b0642452881b1f96060468a08/P0.jpg",
       "description": "Coach Hudson Colorblock Pebbled Leather Backpack C5413. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
-    },
-    {
-      "id": "025a",
-      "slug": "strictly_thrifpee-vintage-michael-kors-astor-black-025a",
-      "title": "Vintage Michael Kors Astor Black Studded Leather Hobo Bag",
-      "brand": "Michael Kors",
-      "price": 55.0,
-      "originalPrice": null,
-      "currency": "USD",
-      "size": "Regular",
-      "condition": "Pre-owned",
-      "category": "bags-accessories",
-      "categoryLabel": "Bags & Accessories",
-      "sold": false,
-      "url": "https://www.depop.com/products/strictly_thrifpee-vintage-michael-kors-astor-black-025a/",
-      "image": "https://media-photos.depop.com/b1/312246951/5300728145_8a0a550492594c36ab77dbcd1dee2209/P0.jpg",
-      "images": [
-        "https://media-photos.depop.com/b1/312246951/5300728145_8a0a550492594c36ab77dbcd1dee2209/P0.jpg",
-        "https://media-photos.depop.com/b1/312246951/5300726975_2ec6c6a281a34f1fa4bc28d493ef80c9/P0.jpg",
-        "https://media-photos.depop.com/b1/312246951/5300727163_f68deb3fe0eb4a1ebf6f2e1023d6ce0d/P0.jpg",
-        "https://media-photos.depop.com/b1/312246951/5300727466_be1301479d2e4449a10d9ded3fcbda58/P0.jpg",
-        "https://media-photos.depop.com/b1/312246951/5300728059_1d8e7c8a659f418bac1ec167f038cafa/P0.jpg",
-        "https://media-photos.depop.com/b1/312246951/5300726977_16227e914b3f4f8c80f70edaa8a5a95e/P0.jpg",
-        "https://media-photos.depop.com/b1/312246951/5300728541_33273a446b3e401883bb4aaa7dd92a31/P0.jpg",
-        "https://media-photos.depop.com/b1/312246951/5300744475_e0fcf5ab548a49a4bd558d491d6a924e/P0.jpg"
-      ],
-      "thumbnail": "https://media-photos.depop.com/b1/312246951/5300728145_8a0a550492594c36ab77dbcd1dee2209/P0.jpg",
-      "description": "Vintage Michael Kors Astor Black Studded Leather Hobo Bag. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "be27",
@@ -710,6 +682,34 @@
       ],
       "thumbnail": "https://media-photos.depop.com/b1/312246951/5274009475_c6147d6b8bc14e7894c4e13babb5b407/P0.jpg",
       "description": "Bright Orange H&M Shorts With. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
+    },
+    {
+      "id": "025a",
+      "slug": "strictly_thrifpee-vintage-michael-kors-astor-black-025a",
+      "title": "Vintage Michael Kors Astor Black Studded Leather Hobo Bag",
+      "brand": "Michael Kors",
+      "price": 55.0,
+      "originalPrice": null,
+      "currency": "USD",
+      "size": "Regular",
+      "condition": "Pre-owned",
+      "category": "bags-accessories",
+      "categoryLabel": "Bags & Accessories",
+      "sold": false,
+      "url": "https://www.depop.com/products/strictly_thrifpee-vintage-michael-kors-astor-black-025a/",
+      "image": "https://media-photos.depop.com/b1/312246951/5300728145_8a0a550492594c36ab77dbcd1dee2209/P0.jpg",
+      "images": [
+        "https://media-photos.depop.com/b1/312246951/5300728145_8a0a550492594c36ab77dbcd1dee2209/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5300726975_2ec6c6a281a34f1fa4bc28d493ef80c9/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5300727163_f68deb3fe0eb4a1ebf6f2e1023d6ce0d/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5300727466_be1301479d2e4449a10d9ded3fcbda58/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5300728059_1d8e7c8a659f418bac1ec167f038cafa/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5300726977_16227e914b3f4f8c80f70edaa8a5a95e/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5300728541_33273a446b3e401883bb4aaa7dd92a31/P0.jpg",
+        "https://media-photos.depop.com/b1/312246951/5300744475_e0fcf5ab548a49a4bd558d491d6a924e/P0.jpg"
+      ],
+      "thumbnail": "https://media-photos.depop.com/b1/312246951/5300728145_8a0a550492594c36ab77dbcd1dee2209/P0.jpg",
+      "description": "Vintage Michael Kors Astor Black Studded Leather Hobo Bag. Sourced by Strictly Thriftee. Available on Depop with Buyer Protection."
     },
     {
       "id": "1651",
